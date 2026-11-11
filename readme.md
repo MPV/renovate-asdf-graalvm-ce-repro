@@ -39,4 +39,4 @@ Look for the `packageFiles with updates` log entry and the `java` deps in it.
 ## Links
 
 - Issue: https://github.com/renovatebot/renovate/issues/19183
-- Pull request: https://github.com/renovatebot/renovate/pull/<PR number>
+- Pull request: https://github.com/renovatebot/renovate/pull/47942
