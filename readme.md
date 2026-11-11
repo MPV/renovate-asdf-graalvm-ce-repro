@@ -1,6 +1,6 @@
 # renovate-asdf-graalvm-ce-repro
 
-Minimal reproduction: Renovate doesn't update GraalVM CE `java` pins (`graalvm-<version>+java<N>`) in asdf's `.tool-versions` or in `mise.toml`.
+Minimal reproduction: Renovate does not update GraalVM CE `java` pins (`graalvm-<version>+java<N>`) in asdf's `.tool-versions` or in `mise.toml`.
 
 ## Current behavior
 
@@ -24,7 +24,7 @@ Renovate skips every case below with `unsupported-datasource`, so these pins nev
 - The `+java<N>` suffix never changes, and Renovate never offers a version that has no build for that Java major.
 - Every expected version exists in asdf-java's list of installable versions, so `asdf install` works: https://raw.githubusercontent.com/halcyon/asdf-java/master/data/jdk-linux-x86_64-ga.tsv
 - `renovate.json` extends `config:recommended`, which includes `workarounds:javaLTSVersions`. GraalVM versions are not Java versions, so that preset must not filter these updates.
-- `renovate.json` sets `minimumReleaseAge`. The updates carry release timestamps, so they're not left pending.
+- `renovate.json` sets `minimumReleaseAge`. The updates carry release timestamps, so they are not left pending.
 
 ## How to run
 
